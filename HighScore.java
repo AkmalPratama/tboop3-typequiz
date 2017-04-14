@@ -2,6 +2,7 @@ package model;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -30,7 +31,7 @@ public class HighScore {
   //method
   /** Constructor dari HighScore.
    * Menghidupkan object HighScore.
-   * @throws IOException 
+   * 
    * 
    */
   public HighScore() throws IOException {
@@ -40,7 +41,16 @@ public class HighScore {
     for (int i = 0; i < size; i++) {
       data[i] = new Player();
     }
-    
+  }
+  
+  /** Prosedur load dari HighScore.
+    * Input data highscore dari file eksternal.
+    * @throws IOException 
+    * I.S : HighScore terdefinisi
+    * F.S : data pada file eksternal terinput ke HighScore
+    * 
+    */
+  public void loadHighScore() throws IOException {
     BufferedReader br = new BufferedReader(new FileReader("src/model/highscore.txt"));
     String strLine;
     try {
