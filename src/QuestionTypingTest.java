@@ -1,5 +1,3 @@
-package model;
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -8,16 +6,16 @@ import org.junit.Test;
  *
  */
 
-public class QuestionMathTest {
-  private QuestionMath testQuestion = 
-      new QuestionMath("2+2","4",1);
+public class QuestionTypingTest {
+  private QuestionTyping testQuestion = 
+      new QuestionTyping("Pineapple","Pineapple",1);
   
   /**
    * Test method for getPertanyaan .
    */
   @Test
   public void testGetPertanyaan() {
-    assertEquals("getPertanyaan() Error!", "2+2", testQuestion.getPertanyaan());
+    assertEquals("getPertanyaan() Error!", "Pineapple", testQuestion.getPertanyaan());
   }
   
   /**
@@ -25,7 +23,7 @@ public class QuestionMathTest {
    */
   @Test
   public void testGetJawaban() {
-    assertEquals("getJawaban() Error!", "4", testQuestion.getJawaban());
+    assertEquals("getJawaban() Error!", "Pineapple", testQuestion.getJawaban());
   }
   
   /**
@@ -41,7 +39,7 @@ public class QuestionMathTest {
    */
   @Test
   public void testGetType() {
-    assertEquals("getType() Error!", 1, testQuestion.getType());
+    assertEquals("getType() Error!", 3, testQuestion.getType());
   }
 
 }

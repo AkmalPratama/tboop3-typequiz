@@ -1,4 +1,3 @@
-package model;
 /**Real Class Player.
  * @author Alivia Dewi Parahita
  *

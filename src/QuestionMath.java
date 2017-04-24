@@ -1,4 +1,3 @@
-package model;
 /**Real Class QuestionMath.
  * @author Alivia Dewi Parahita
  *

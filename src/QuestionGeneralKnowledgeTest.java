@@ -1,5 +1,3 @@
-package model;
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -8,16 +6,16 @@ import org.junit.Test;
  *
  */
 
-public class QuestionTypingTest {
-  private QuestionTyping testQuestion = 
-      new QuestionTyping("Pineapple","Pineapple",1);
+public class QuestionGeneralKnowledgeTest {
+  private QuestionGeneralKnowledge testQuestion = 
+      new QuestionGeneralKnowledge("Ibu kota Indonesia?","Jakarta",1);
   
   /**
    * Test method for getPertanyaan .
    */
   @Test
   public void testGetPertanyaan() {
-    assertEquals("getPertanyaan() Error!", "Pineapple", testQuestion.getPertanyaan());
+    assertEquals("getPertanyaan() Error!", "Ibu kota Indonesia?", testQuestion.getPertanyaan());
   }
   
   /**
@@ -25,7 +23,7 @@ public class QuestionTypingTest {
    */
   @Test
   public void testGetJawaban() {
-    assertEquals("getJawaban() Error!", "Pineapple", testQuestion.getJawaban());
+    assertEquals("getJawaban() Error!", "Jakarta", testQuestion.getJawaban());
   }
   
   /**
@@ -41,7 +39,7 @@ public class QuestionTypingTest {
    */
   @Test
   public void testGetType() {
-    assertEquals("getType() Error!", 3, testQuestion.getType());
+    assertEquals("getType() Error!", 2, testQuestion.getType());
   }
 
 }

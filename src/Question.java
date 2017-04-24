@@ -1,4 +1,3 @@
-package model;
 /**Abstract Base Class Question.
  * @author Alivia Dewi Parahita
  *

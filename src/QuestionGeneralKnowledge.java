@@ -1,4 +1,3 @@
-package model;
 /**Real Class QuestionGeneralKnowledge.
  * @author Alivia Dewi Parahita
  *

@@ -1,4 +1,3 @@
-package model;
 /**Real Class QuestionTyping.
  * @author Alivia Dewi Parahita
  *
